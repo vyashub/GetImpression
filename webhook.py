@@ -34,8 +34,8 @@ def makeResponse(req):
     
     # run a SQL query using the connection you created
     cursor = conn.cursor()
-    print(cursor)
-    print('start')
+    #print(cursor)
+    #print('start')
     cmp_id = 'nlsn1234'
     query = '''SELECT nielsen_campaign_id as Campaign_id,nielsen_campaign_name as Campaign_name,
     encrypted_nielsen_campaign_id as encrypted_campaign_id,
@@ -50,13 +50,13 @@ def makeResponse(req):
     
     cursor.execute(query)
     
-    print('Done')
+    #print('Done')
     
     rows = cursor.fetchall()
     # print the rows retrieved by the query.
     speech = 'The number of impressions for id 11111 is2222222'
     for row in rows:
-        print(row)
+        #print(row)
         speech = "The number of impression for "+cmp_id+" is "+ row[-1]
         
     return {
