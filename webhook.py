@@ -1,7 +1,8 @@
-heroku/python buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
 import json
 import os
 import pyodbc
+
+os.system("heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt")  
 
 from flask import Flask
 from flask import request
