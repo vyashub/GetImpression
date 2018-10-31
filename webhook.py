@@ -34,7 +34,7 @@ def makeResponse(req):
     cursor = conn.cursor()
     print(cursor)
     print('start')
-    
+    cmp_id = 'nlsn1234'
     query = '''SELECT nielsen_campaign_id as Campaign_id,nielsen_campaign_name as Campaign_name,
     encrypted_nielsen_campaign_id as encrypted_campaign_id,
     collection_start_date, collection_end_date,
