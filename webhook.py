@@ -2,7 +2,7 @@ import json
 import os
 import pyodbc
 
-os.system("heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt")  
+os.system("sudo apt-get install python3-dev")  
 
 from flask import Flask
 from flask import request
