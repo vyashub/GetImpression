@@ -1,3 +1,4 @@
+heroku/python buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
 import json
 import os
 import pyodbc
